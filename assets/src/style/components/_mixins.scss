@@ -1,0 +1,25 @@
+@use "../customStyling" as *;
+
+@mixin colorChanger {
+ background: linear-gradient(45deg,rgba($primary,0.90),rgba($secondary,0.90));
+}
+
+@mixin positionAbsolute {
+ position: absolute;
+ top:50%;
+ left:50%;
+ transform: translate(-50%,-50%);
+}
+
+@mixin transition {
+ transition-duration:1000ms ;
+ transition-property: all;
+ 
+}
+
+@mixin textGradient {
+ font-weight: bold;
+  background: -webkit-linear-gradient(rgb(7, 210, 81), rgba(16, 50, 29, 0.646));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

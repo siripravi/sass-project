@@ -1,0 +1,27 @@
+<!--[if lte IE 8]>
+p.browserupgrade.
+  You are using an #[strong outdated] browser.
+  Please #[a(target="_blank" href="http://browsehappy.com/") upgrade your browser] to improve your experience.
+<!--<![endif]-->
+  nav.navbar.navbar-expand-lg.navbar-dark.navbar-custom.fixed-top
+    .container
+      a.navbar-brand.text-white.fw-bold.logo(href='#')
+        | MS Agency
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarNav.collapse.navbar-collapse.justify-content-end
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link.active(aria-current='page' href='#') Home
+          li.nav-item
+            a.nav-link(href='#about') About
+          li.nav-item
+            a.nav-link(href='#services') Services
+          li.nav-item
+            a.nav-link(href='#portfolio') portfolio
+          li.nav-item
+            a.nav-link(href='#contact') contact
+        button.btn-gradient(type='button')
+          | 0123456789
+          span.text-white
+            i.fas.fa-phone-alt

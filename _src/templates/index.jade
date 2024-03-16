@@ -1,0 +1,410 @@
+doctype html
+html
+    include ./includes/head.jade
+    body(data-spy="scroll" data-target="#navbar-example")
+        include ./includes/nav.jade
+        include ./includes/header.jade
+section#about.about.pt-5
+    .container
+        .row.text-left
+        .col-md-6.about-section
+            h1.display-3.fw-bold.about-section__heading
+            | About Us
+            p.lh-lg.about-section__paragraph.fw-light
+            | Lorem ipsum dolor sit amet consectetur adipisicing
+            | elit. Alias, odio
+            | minima sapiente quam minus
+            | aperiam error
+            | facilis vitae non molestias cumque iure tempore eligendi labore. sapiente quam minus
+            | aperiam error
+            | facilis vitae non molestias cumque iure tempore eligendi labore. Lorem ipsum dolor sit amet consectetur
+            | adipisicing elit. Officiis, quasi?
+        .col-md-6.text-end
+            img.img-fluid(src='./assets/illustrations/Web Developer_Monochromatic.png' alt='')
+
+    section#services.services
+        .container
+            .row.text-center
+                h1.display-3.fw-bold Services
+                .bottom-line.mb-1
+        .container
+            // one
+            .row
+                .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                    .services__content
+                        .icon.d-block.fas.fa-paper-plane
+                        h3.display-3--title.mt-1
+                            | Seo Optimization
+                        p.lh-lg.fw-light
+                            | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae repellat nemo ipsa inventore, placeat
+                            | nostrum
+                            | veritatis corrupti dignissimos necessitatibus, amet voluptatibus optio quasi omnis qui nesciunt, illo
+                            | architecto.
+                        button.btn-gradient(type='button')
+                            | Get In Touch
+                            span.text-white
+                                i.fas.fa-arrow-right
+                .col-lg-6.col-md-6.col-sm-12.col-xs-12.mt-4.text-end.mt-5
+                    .services__picture
+                        img.img-fluid(src='./assets/illustrations/seo-optimization.png' alt='')
+            // two
+            .row
+                .col-lg-6.col-md-6.col-sm-12.col-xs-12.mt-4
+                    .services__picture
+                        img.img-fluid(src='./assets/illustrations/undraw_stripe_payments_o7aw.png' alt='')
+                .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                    .services__content
+                        .icon.d-block.far.fa-money-bill-alt
+                        h3.display-3--title.mt-1
+                            | Marketing
+                        p.lh-lg.fw-light
+                            | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae repellat nemo ipsa inventore, placeat
+                            | nostrum
+                            | veritatis corrupti dignissimos necessitatibus, amet voluptatibus optio quasi omnis qui nesciunt, illo
+                            | architecto.
+                        button.btn-gradient(type='button')
+                            | Get In Touch
+                            span.text-white
+                                i.fas.fa-arrow-right
+            // three
+            .row
+                .col-lg-6.col-md-6.col-sm-12.col-xs-12.mt-5
+                    .services__content
+                        .icon.d-block.fas.fa-desktop
+                        h3.display-3--title.mt-1
+                            | Web Design
+                        p.lh-lg.fw-light
+                            | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae repellat nemo ipsa inventore, placeat
+                            | nostrum
+                            | veritatis corrupti dignissimos necessitatibus, amet voluptatibus optio quasi omnis qui nesciunt, illo
+                            | architecto.
+                        button.btn-gradient(type='button')
+                            | Get In Touch
+                            span.text-white
+                                i.fas.fa-arrow-right
+                .col-lg-6.col-md-6.col-sm-12.col-xs-12.mt-4.text-end.mt-5
+                    .services__picture
+                        img.img-fluid(src='./assets/illustrations/web-design.png' alt='')
+            // four
+            .row
+                .col-lg-6.col-md-6.col-sm-12.col-xs-12.mt-4.text-end.mr-5
+                    .services__picture
+                        img.img-fluid(src='./assets/illustrations/ecommorce.png' alt='')
+                .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                    .services__content
+                        .icon.d-block.fas.fa-store-alt
+                        h3.display-3--title.mt-1
+                            | Ecommorce Store
+                        p.lh-lg.fw-light
+                            | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae repellat nemo ipsa inventore, placeat
+                            | nostrum
+                            | veritatis corrupti dignissimos necessitatibus, amet voluptatibus optio quasi omnis qui nesciunt, illo
+                            | architecto.
+                        button.btn-gradient(type='button')
+                            | Get In Touch
+                            span.text-white
+                                i.fas.fa-arrow-right
+    html
+head
+body
+    section#testimonials.testimonials
+        .container
+            .row.text-center.text-white
+                h1.display-3.fw-bold Testimonials
+                hr.mx-auto(style='width:10rem; height:5px;')
+            .row.align-items-center
+                // bootstrap carousal
+                #carouselExampleCaptions.carousel.slide(data-bs-ride='carousel')
+                    // slide testimonials
+                    .carousel-inner
+                        // first testimonial
+                        .carousel-item.active
+                            .testimonials__section
+                                p.lead.lh-lg
+                                    i.fas.fa-quote-left
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
+                                        nesciunt
+                                        similique iure dolorum sapiente tempore natus ab beatae ipsa minus, eum accusamus tempora dolor
+                                        consequuntur
+                                    i.fas.fa-quote-right
+                                .ratings.p-1
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                p
+                            // client image
+                            .testimonials__image
+                                img.image-fluid(src='./assets/images/men-1.jpg' alt='client-image')
+                            // client job
+                            .testimonials__job.text-center.text-white
+                                h3.display-3 John Doe
+                                p.fw-light CEO &amp; Founder
+                        // second testimonial
+                        .carousel-item
+                            .testimonials__section
+                                p.lead.lh-lg
+                                    i.fas.fa-quote-left
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
+                                        nesciunt
+                                        similique iure dolorum sapiente tempore natus ab beatae ipsa minus, eum accusamus tempora dolor
+                                        consequuntur
+                                    i.fas.fa-quote-right
+                                .ratings.p-1
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                p
+                            // client image
+                            .testimonials__image
+                                img.image-fluid(src='./assets/images/men-2.jpeg' alt='client-image')
+                            // client job
+                            .testimonials__job.text-center.text-white
+                                h3.display-3 Sam Jinks
+                                p.fw-light Vice President
+                        // third testimonial
+                        .carousel-item
+                            .testimonials__section
+                                p.lead.lh-lg
+                                    i.fas.fa-quote-left
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
+                                        nesciunt
+                                        similique iure dolorum sapiente tempore natus ab beatae ipsa minus, eum accusamus tempora dolor
+                                        consequuntur
+                                    i.fas.fa-quote-right
+                                .ratings.p-1
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                p
+                            // client image
+                            .testimonials__image
+                                img.image-fluid(src='./assets/images/men-3.jpg' alt='client-image')
+                            // client job
+                            .testimonials__job.text-center.text-white
+                                h3.display-3 Peter Jane
+                                p Manager
+                    .text-center
+                        button.btn.btn-outline-light.fas.fa-long-arrow-alt-left(type='button')
+                        button.btn.btn-outline-light.fas.fa-long-arrow-alt-right(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='next')
+
+    section#portfolio.portfolio
+        .container
+            .row.text-center.mt-5
+                h1.display-3.text-capitalize.fw-bold My Work
+                .bottom-line
+            // work
+            .row
+                .col-lg-4.col-md-6
+                    .portfolio-box.shadow
+                        img(src='./assets/portfolio/portfolio-1.webp' alt='')
+                        .portfolio-info
+                            .caption
+                                h4 Latest Work
+                                button.btn-gradient(type='button')
+                                    | Click Me
+                                    span.text-white
+                                        i.fas.fa-arrow-right
+                .col-lg-4.col-md-6
+                    .portfolio-box.shadow
+                        img(src='./assets/portfolio/portfolio-2.jpg' alt='')
+                        .portfolio-info
+                            .caption
+                                h4 Latest Work.
+                                button.btn-gradient(type='button')
+                                    | Click Me
+                                    span.text-white
+                                        i.fas.fa-arrow-right
+                .col-lg-4.col-md-6
+                    .portfolio-box.shadow
+                        img(src='./assets/portfolio/portfolio-3.jpg' alt='')
+                        .portfolio-info
+                            .caption
+                                h4 Latest Work.
+                                button.btn-gradient(type='button')
+                                    | Click Me
+                                    span.text-white
+                                        i.fas.fa-arrow-right
+                .col-lg-4.col-md-6
+                    .portfolio-box.shadow
+                        img(src='./assets/portfolio/portfolio-4.jpg' alt='')
+                        .portfolio-info
+                            .caption
+                                h4 Latest Work
+                                button.btn-gradient(type='button')
+                                    | Click Me
+                                    span.text-white
+                                        i.fas.fa-arrow-right
+                .col-lg-4.col-md-6
+                    .portfolio-box.shadow
+                        img(src='./assets/portfolio/portfolio-5.jpg' alt='')
+                        .portfolio-info
+                            .caption
+                                h4 Latest Work
+                                button.btn-gradient(type='button')
+                                    | Click Me
+                                    span.text-white
+                                        i.fas.fa-arrow-right
+                .col-lg-4.col-md-6
+                    .portfolio-box.shadow
+                        img(src='./assets/portfolio/portfolio-6.jpg' alt='')
+                        .portfolio-info
+                            .caption
+                                h4 Latest Work
+                                button.btn-gradient(type='button')
+                                    | Click Me
+                                    span.text-white
+                                        i.fas.fa-arrow-right
+                .col-lg-4.col-md-6
+                    .portfolio-box.shadow
+                        img(src='./assets/portfolio/portfolio-7.jpg' alt='')
+                        .portfolio-info
+                            .caption
+                                h4 Latest Work
+                                button.btn-gradient(type='button')
+                                    | Click Me
+                                    span.text-white
+                                        i.fas.fa-arrow-right
+                .col-lg-4.col-md-6
+                    .portfolio-box.shadow
+                        img(src='./assets/portfolio/portfolio-8.jpg' alt='')
+                        .portfolio-info
+                            .caption
+                                h4 Latest Work
+                                button.btn-gradient(type='button')
+                                    | Click Me
+                                    span.text-white
+                                        i.fas.fa-arrow-right
+                .col-lg-4.col-md-6
+                    .portfolio-box.shadow
+                        img(src='./assets/portfolio/portfolio-9.jpg' alt='')
+                        .portfolio-info
+                            .caption
+                                h4 Latest Work
+                                button.btn-gradient(type='button')
+                                    | Click Me
+                                    span.text-white
+                                        i.fas.fa-arrow-right
+
+
+    section#contact.contact
+        .container
+            .row.text-center.mt-5
+                h1.display-3.text-capitalize.fw-bold Contact Us
+                .bottom-line
+            .row
+                form.row.g-3
+                    .col-md-6
+                        label.form-label(for='inputFirstName') First Name
+                        input#inputFirstName.form-control(type='text')
+                    .col-md-6
+                        label.form-label(for='inputLastName') Last Name
+                        input#inputLastName.form-control(type='text')
+                    .col-12
+                        label.form-label(for='inputEmail') Email
+                        input#inputEmail.form-control(type='email' placeholder='msagency@gmail.com')
+                    .col-12
+                        label.form-label(for='inputTextArea') Messege
+                        textarea#inputTextArea.form-control(name='text' placeholder='Messege Me' cols='30' rows='10')
+                    .col-12.mx-auto
+                        button.btn(type='submit') Sign in
+    html
+head
+body
+    footer#footer.footer
+        .container
+            .row.footer-contact
+                // call
+                .col-md-4.col-lg-4.contact-box.pt-1.d-md-block.d-lg-flex.d-flex
+                    .contact-box__icon
+                        svg.icon.icon-tabler.icon-tabler-phone-call(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' stroke-width='1' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                            path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                            path(d='M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2')
+                            path(d='M15 7a2 2 0 0 1 2 2')
+                            path(d='M15 3a6 6 0 0 1 6 6')
+                    .contact-box__info
+                        a.contact-box__info--title(href='') 647-464-5466
+                        p.contact-box__info--subtitle Mon-Fri 9am-6pm
+                // email
+                .col-md-4.col-lg-4.contact-box.pt-1.d-md-block.d-lg-flex.d-flex
+                    .contact-box__icon
+                        svg.icon.icon-tabler.icon-tabler-mail-opened(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' stroke-width='1' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                            path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                            polyline(points='3 9 12 15 21 9 12 3 3 9')
+                            path(d='M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10')
+                            line(x1='3' y1='19' x2='9' y2='13')
+                            line(x1='15' y1='13' x2='21' y2='19')
+                    .contact-box__info
+                        a.contact-box__info--title(href='') info@maryam.com
+                        p.contact-box__info--subtitle messsege me
+                // location
+                .col-md-4.col-lg-4.contact-box.pt-1d-md-block.d-lg-flex.d-flex
+                    .contact-box__icon
+                        svg.icon.icon-tabler.icon-tabler-map-2(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' stroke-width='1' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                            path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                            line(x1='18' y1='6' x2='18' y2='6.01')
+                            path(d='M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5')
+                            polyline(points='10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15')
+                            line(x1='9' y1='4' x2='9' y2='17')
+                            line(x1='15' y1='15' x2='15' y2='20')
+                    .contact-box__info
+                        a.contact-box__info--title(href='') Toronto, Canada
+                        p.contact-box__info--subtitle Brampton
+        .footer-links.p-3.text-white
+            .container.mt-5
+                .row.justify-content-center.mt-3.pb-3
+                    .col-12.col-sm-6.col-lg-2.mb-4.mx-auto
+                        h5.text-capitalize.fw-bold
+                            | products
+                        hr.d-inline-block.mb-4(class='bg-$primary' style='width:60px; height:2px;')
+                        ul.list-inline.list-info.text-capitalize
+                            li
+                                a(href='#') web-design
+                            li
+                                a(href='#') seo optimization
+                            li
+                                a(href='#') self branding
+                            li
+                                a(href='#') e commorce
+                    .col-12.col-sm-6.col-lg-6.mx-auto
+                        h5.text-capitalize.fw-bold
+                            | Company Name
+                        hr.d-inline-block.mb-4(style='width:60px; height:2px;')
+                        p.lh-lg
+                            | MS Agency
+                            | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cum recusandae voluptas dicta necessitatibus
+                            | aliquid?
+                    .col-12.col-sm-6.col-lg-2.mb-4.mx-auto
+                        h5.text-capitalize.fw-bold
+                            | Services
+                        hr.d-inline-block.mb-4(style='width:60px; height:2px;')
+                        ul.list-inline.list-info.text-capitalize
+                            li
+                                a(href='#') marketing
+                            li
+                                a(href='#') web development
+                            li
+                                a(href='#') UI developer
+                            li
+                                a(href='#') web design
+                    .col-12.col-sm-6.col-lg-2.mb-4.mx-auto
+                        h5.text-capitalize.fw-bold
+                            | Contact Info
+                        hr.d-inline-block.mb-4(style='width:60px; height:2px;')
+                        ul.list-inline.list-info.text-capitalize
+                            li
+                                a(href='#') 647-464-5466
+                            li
+                                a(href='#') info@maryam.com
+                            li
+                                a(href='#') Mon-Fri 9am - 6pm
+                            li
+                                a(href='#') Toronto,ON, Canada
+        p.copy-right.pt-3 copy right @ Maryam Shahnawaz          
+
+    include ./includes/footer.jade
